@@ -9,11 +9,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.document.mongodb.MongoTemplate;
-import org.springframework.data.document.mongodb.query.Criteria;
-import org.springframework.data.document.mongodb.query.Query;
 import org.springframework.stereotype.Repository;
 
 /**
+ * Repository for {@link Person}s
+ *
  * @author Jeroen Reijn
  */
 @Repository
@@ -32,6 +32,7 @@ public class PersonRepository {
 
     /**
      * Calculates the average age of a {@link Person}.
+     *
      * @return the average age
      */
     public int getAvarageAgeOfPerson() {

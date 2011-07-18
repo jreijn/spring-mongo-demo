@@ -7,6 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Small MongoDB application that uses spring data to interact with MongoDB.
+ * 
  * @author Jeroen Reijn
  */
 public class MongoDBApp {
