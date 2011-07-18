@@ -31,7 +31,7 @@ public class MongoDBApp {
         }
 
         personRepository.logAllPersons();
-        logger.info("Avarage age of a person is: {}", personRepository.getAvaragePersonAge());
+        logger.info("Avarage age of a person is: {}", personRepository.getAvarageAgeOfPerson());
 
         logger.info("Finished MongoDemo application");
 	}

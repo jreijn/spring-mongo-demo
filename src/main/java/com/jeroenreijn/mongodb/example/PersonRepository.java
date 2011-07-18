@@ -9,6 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.document.mongodb.MongoTemplate;
+import org.springframework.data.document.mongodb.query.Criteria;
+import org.springframework.data.document.mongodb.query.Query;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -32,7 +34,7 @@ public class PersonRepository {
      * Calculates the average age of a {@link Person}.
      * @return the average age
      */
-    public int getAvaragePersonAge() {
+    public int getAvarageAgeOfPerson() {
         List<Person> results = mongoTemplate.findAll(Person.class);
         int age = 0;
         Iterator<Person> personIterator = results.iterator();
