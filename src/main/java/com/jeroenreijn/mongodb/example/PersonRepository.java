@@ -46,7 +46,7 @@ public class PersonRepository {
         return age / results.size();
     }
 
-    public void insertPersonWithRandomAge() {
+    public void insertPersonWithNameJohnAndRandomAge() {
         //get random age between 1 and 100
         double age = Math.ceil(Math.random() * 100);
 
