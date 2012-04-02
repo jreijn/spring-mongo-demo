@@ -1,7 +1,7 @@
 package com.jeroenreijn.mongodb.example.domain;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.document.mongodb.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
  * A simple POJO representing a Person
@@ -56,7 +56,8 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person [id=" + personId + ", name=" + name + ", age=" + age + ", home town=" + homeTown + "]";
+        return "Person [id=" + personId + ", name=" + name
+                + ", age=" + age + ", home town=" + homeTown + "]";
     }
 
 }

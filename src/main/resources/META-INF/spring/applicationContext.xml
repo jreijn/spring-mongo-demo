@@ -16,13 +16,13 @@
   </context:component-scan>
 
   <!-- Define the MongoTemplate which handles connectivity with MongoDB -->
-  <bean id="mongoTemplate" class="org.springframework.data.document.mongodb.MongoTemplate">
+  <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
     <constructor-arg name="mongo" ref="mongo"/>
     <constructor-arg name="databaseName" value="demo"/>
   </bean>
 
   <!-- Factory bean that creates the Mongo instance -->
-  <bean id="mongo" class="org.springframework.data.document.mongodb.MongoFactoryBean">
+  <bean id="mongo" class="org.springframework.data.mongodb.core.MongoFactoryBean">
     <property name="host" value="localhost"/>
   </bean>
 
